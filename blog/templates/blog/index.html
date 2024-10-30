@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block titile%}
+    Index
+{%endblock titile%}
+{%block header%}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <div class="header">
+        <a style="float: left;" href="{% url 'blog:index'%}"><img src="{% static 'images/logo.PNG'%}" height="100px" width="100px"></a>
+        <a style="float: left;margin-top: 25px;" href="{% url 'blog:profile'%}">Profile</a>
+        <a style="float: left;margin-top: 25px;" href="{% url 'blog:about'%}">About</a>
+        <a style="float: left;margin-top: 25px;" href="{% url 'blog:newpost'%}">NewPost</a>
+        <a style="margin-left: 55rem;" href="{% url 'blog:login_std'%}">login</a>
+        <a href="{% url 'blog:signup_std'%}">signup</a>
+    </div>
+{%endblock header%}
+{%block b1%}
+    <div class="main">
+        <h4>Main</h4>
+    </div>
+{%endblock b1%}
+{%block footer%}
+    <div class="footer">
+        <h1>Thanks for visiting</h1>
+    </div>
+{%endblock footer%}
